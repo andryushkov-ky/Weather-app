@@ -22,6 +22,7 @@
   "author": "andrushkov@konstantin@gmail.com",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.2",
     "moment": "^2.19.2",
     "normalize.css": "^7.0.0",
     "postcss-nested": "^2.0.3",

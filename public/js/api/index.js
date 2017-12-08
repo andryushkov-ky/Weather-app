@@ -8,7 +8,6 @@ export const addCity = city => {
             .get(`http://api.apixu.com/v1/current.json`)
             .query({ key: token })
             .query({ q: city })
-            .query({ lang: 'ru' })
             .then(({body}) => {
                 resolve(body)
             })
@@ -24,8 +23,7 @@ export const fetchCityForecast = city => {
             .get(`http://api.apixu.com/v1/forecast.json`)
             .query({ key: token })
             .query({ q: city })
-            .query({ lang: 'ru' })
-            .query({ days: '7' })
+            .query({ days: '5' })
             .then(({body}) => {
                 resolve(body)
             })

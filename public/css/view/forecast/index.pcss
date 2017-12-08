@@ -1,0 +1,40 @@
+.forecast {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.forecast__item {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forecast__deg {
+    display: flex;
+    margin-top: 2px;
+    font-size: 14px;
+}
+
+.forecast__day {
+    color: #797979;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.forecast__img {
+    display: flex;
+    width: 64px;
+    height: 64px;
+}
+
+.forecast__temp {
+    font-weight: bold;
+    color: #337ab7;
+
+    &:first-child {
+        margin-right: 7px;
+        color: #797979;
+    }
+}

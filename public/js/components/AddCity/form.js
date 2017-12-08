@@ -5,7 +5,8 @@ import { renderInputField } from './renderFields'
 
 import {
     required,
-    maxLength50
+    maxLength50,
+    language
 } from './validate'
 
 
@@ -25,12 +26,11 @@ class Form extends React.Component {
                     id="city"
                     component={renderInputField}
                     type="text"
-                    className="form__input-text"
-                    validate={[required, maxLength50]}/>
+                    className="add-city__input"
+                    validate={[required, language, maxLength50]}/>
 
-                <div className="form__btn-wrap">
-                    <button disabled={this.props.submitting} type="submit" className="form__btn">Добавить город</button>
-                </div>
+                <button disabled={this.props.submitting} type="submit" className="add-city__btn">Add location</button>
+
             </form>
         )
     }

@@ -1,0 +1,59 @@
+.add-city {
+    margin: 0 auto;
+    padding: 40px 0;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.add-city__btn {
+    height: 40px;
+    width: 34%;
+    color: #fff;
+    background-color: #337ab7;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.add-city__row {
+    padding: 0 10px;
+    width: 66%;
+    box-sizing: border-box;
+}
+
+.add-city__form {
+    display: flex;
+    margin-right: 10px;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.add-city__input {
+    padding: 1px 15px 1px 15px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #f2f2f2;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.add-city__inner {
+    position: relative;
+}
+
+.add-city__error,
+.add-city__warning {
+    position: absolute;
+    right: 2px;
+    top: -18px;
+    font-size: 14px;
+    color: rgba(255,0,0, .8);
+
+    & + .add-city__input {
+        border: 1px solid rgba(255,0,0, .8);
+    }
+}
